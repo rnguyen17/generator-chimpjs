@@ -17,14 +17,6 @@ module.exports = class extends Generator {
       },
     ]).then(answers => {
       this.destinationRoot();
-      this.fs.copyTpl(
-        this.templatePath('_package.json'),
-        this.destinationPath(`${answers.name}/package.json`),
-        {
-          name: answers.name,
-        }
-      );
-
       this.fs.copy(this.templatePath('./'), this.destinationPath(`./${answers.name}`), {
         name: answers.name,
         globOptions: {
@@ -32,6 +24,14 @@ module.exports = class extends Generator {
           ignore: ['**/node_modules/**', '**/yarn.lock', '**/package.json', '**/_package.json'],
         },
       });
+
+      this.fs.copyTpl(
+        this.templatePath('_package.json'),
+        this.destinationPath(`${answers.name}/package.json`),
+        {
+          name: answers.name,
+        }
+      );
     });
   }
 };
