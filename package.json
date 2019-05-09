@@ -2,11 +2,15 @@
   "name": "generator-chimpjs",
   "version": "0.0.0",
   "description": "",
-  "homepage": "",
+  "homepage": "https://github.com/rnguyen17/generator-chimpjs",
   "author": {
     "name": "Richardo Buckets",
     "email": "richard.n.1337@gmail.com",
-    "url": ""
+    "url": "https://github.com/rnguyen17/generator-chimpjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rnguyen17/generator-chimpjs"
   },
   "files": [
     "generators"
@@ -73,6 +77,5 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "rnguyen17/generator-react-webpack-typescript",
   "license": "MIT"
 }
