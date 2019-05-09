@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Richardo Buckets",
+      "authorEmail": "richard.n.1337@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
